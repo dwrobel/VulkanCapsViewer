@@ -5,11 +5,12 @@ dist: trusty
 
 before_install:
   - sudo add-apt-repository ppa:beineri/opt-qt591-trusty -y
+  - sudo apt-add-repository ppa:canonical-x/vulkan
   - sudo apt-get update -qq
     
 install: 
   - sudo apt-get -y install qt59base qt59svg qt59tools qt59translations zlib1g-dev xvfb
-  - sudo apt-get -y install qt59x11extras libvulkan-dev
+  - sudo apt-get -y install qt59x11extras vulkan-utils
   - source /opt/qt5*/bin/qt5*-env.sh
 
 script:
