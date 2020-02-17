@@ -9,7 +9,7 @@ HEADERS += ./settings.h \
     ./submitDialog.h \
     ./vulkandatabase.h \
     ./settingsDialog.h \
-    $$PWD/Vulkan-Headers/include/vulkan/vulkan.h \
+    /usr/include/vulkan/vulkan.h \
     $$PWD/vulkanandroid.h \
     $$PWD/vulkansurfaceinfo.hpp \
     $$PWD/vulkanpfn.h \

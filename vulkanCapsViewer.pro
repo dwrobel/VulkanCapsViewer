@@ -22,9 +22,9 @@ win32 {
 }
 linux:!android {
     LIBS += -lvulkan
-    QT += x11extras
-    #x11 {
-        DEFINES += VK_USE_PLATFORM_XCB_KHR
+    #wayland {
+        DEFINES += VK_USE_PLATFORM_WAYLAND_KHR
+        LIBS += -lwayland-client
     #}
     target.path = /usr/bin
     INSTALLS += target
